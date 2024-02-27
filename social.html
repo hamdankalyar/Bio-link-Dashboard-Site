@@ -18,21 +18,20 @@
 
     body {
       font-family: "Poppins", sans-serif;
-      background-color: #141627;
+      background-color: #0a0a0a;
       color: white;
       margin: 0;
       padding: 0;
     }
 
     .sidebar {
-      background-color: #141627;
+      background-color: #0e0e0e;
       width: 220px;
       height: 100%;
       /* padding: 20px; */
       position: fixed;
-      padding-bottom: 10%;
+      padding-bottom: 4%;
       padding-top: 10%;
-      border: 1px solid #80808026;
       border-left: hidden;
       border-top: hidden;
       border-bottom: hidden;
@@ -52,7 +51,7 @@
     }
 
     .top-bar #upgrade {
-      background-color: #0a84ff;
+      background: linear-gradient(91deg, #181729 -8.29%, #7c17cc 106.01%);
       color: white;
       border: none;
       padding: 10px 20px;
@@ -93,10 +92,10 @@
     }
 
     .profile-card button {
-      border: none;
       padding: 6px;
       font-size: 10px;
-      background-color: #293060;
+      background: #141414;
+      border: 1px solid #202020;
       border-radius: 5px;
       color: white;
     }
@@ -104,8 +103,7 @@
     .menubar {
       padding-left: 20px;
       padding-right: 20px;
-      position: absolute;
-      z-index: 100;
+
     }
 
     .menubar a {
@@ -183,8 +181,9 @@
 
     #cross-btn {
       display: flex;
-      background-color: #6067a9;
-      border: none;
+      background: #141414;
+      border: 2px solid #202020;
+      color: white;
       border-radius: 9px;
       align-items: center;
       justify-content: center;
@@ -212,11 +211,12 @@
 
 
     /* Small screens */
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .sidebar {
         width: 220px;
         /* Set sidebar width */
         position: fixed;
+        box-shadow: 10px 0 10px rgba(0, 0, 0, .35);
         top: 0;
         left: 0;
         /* Position sidebar to the left */
@@ -244,7 +244,8 @@
 
         border-radius: 9px;
         border: none;
-        background-color: #434c87;
+        background: #141414;
+        border: 2px solid #202020;
         padding: 5px 8px;
         position: absolute;
         left: 25px;
@@ -282,7 +283,7 @@
 
 
     /* Hide the cross button on screens wider than 767px */
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       #cross-btn {
         display: none !important;
         /* Use !important to override inline styles if necessary */
@@ -315,7 +316,7 @@
     }
 
     #logo-heading {
-      font-size: 32px;
+      font-size: 20px;
       font-weight: 500;
     }
 
@@ -348,7 +349,7 @@
 
     .dropdown {
       width: 100%;
-      background: #1d2237;
+      background-color: #0c0c0c;
       color: #fff;
       border-radius: 5px;
       cursor: pointer;
@@ -387,7 +388,7 @@
       height: 125px;
       overflow-y: scroll;
       position: absolute;
-      background-color: #1d2237;
+      background-color: #0c0c0c;
       width: 100%;
       top: 89%;
       margin-top: 7px;
@@ -427,7 +428,7 @@
       border-radius: 5px;
       outline: none;
       font-size: 0.8rem;
-      background-color: #1d2237;
+      background-color: #0c0c0c;
       flex-grow: 0;
       color: #ffff;
       margin-bottom: 10px;
@@ -436,9 +437,9 @@
     /******************************add button*******************/
     #add-btn {
       padding: 10px 24px;
-      border: none;
       border-radius: 5px;
-      background: #3747b2;
+      background-color: #181818;
+      border: 2px solid transparent;
       color: #fff;
       cursor: pointer;
       width: 100%;
@@ -457,7 +458,7 @@
       margin-bottom: 10px;
       width: 80%;
       margin: 0 auto;
-      background-color: #4f5cad;
+      background-color: #111;
       border-radius: 12px;
       height: 70px;
     }
@@ -468,8 +469,6 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-
-      background: #4f5cad;
       border-radius: 12px;
     }
 
@@ -484,7 +483,7 @@
       border-radius: 12px;
       outline: none;
       font-size: 0.8rem;
-      background-color: #3f4a90;
+      background-color: #0c0c0c;
       flex-grow: 0;
       color: #fff;
       margin: 11px 0px;
@@ -494,9 +493,8 @@
       padding: 11px;
       border: none;
       border-radius: 12px;
-      /* background: #3747b2; */
-      background-color: #4f5cad;
-      color: #fff;
+      background: none;
+      /* color: #fff; */
       cursor: pointer;
     }
 
@@ -544,13 +542,13 @@
 
     /* Styles the scrollbar handle for .dropdown-list */
     .dropdown-list::-webkit-scrollbar-thumb {
-      background-color: #3d4fc0;
+      background-color: #242424;
       border-radius: 15px;
     }
 
     /* Styles the scrollbar button (arrows) for .dropdown-list */
     .dropdown-list::-webkit-scrollbar-button {
-      background-color: #4756b6;
+      background-color: #3b3b3b;
       border-top-right-radius: 12px;
       /* Color of the scrollbar button */
     }
@@ -569,13 +567,10 @@
 
     .connects-container {
       padding: 8px 12px;
-
       border-radius: 4px;
-      background-color: #293060;
+      background-color: #111;
       color: white;
-
       box-sizing: border-box;
-
       border-radius: 12px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       width: 80%;
@@ -591,11 +586,10 @@
     }
 
     .icon-container {
-      border: 1px solid gray;
+      border: 1px solid #8080800f;
       border-radius: 12px;
       /* padding: 0px 0px 0px 0px; */
-      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25),
-        0 12px 10px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       margin-right: 10px;
       display: flex;
       padding: 10px;
@@ -605,58 +599,180 @@
     .icon-container svg {
       margin-right: 3px;
     }
+
+    /*------------------------------------------- sidebar button styling----------------------------------------------- */
+    .card {
+      background-color: #bd1414;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      color: white;
+      background-color: #0a0a0a;
+      text-align: center;
+      box-sizing: border-box;
+      position: relative;
+      border: 1px solid white;
+    }
+
+    .content-card p {
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .illustration {
+      margin: 20px 0;
+    }
+
+    .illustration img {
+      width: 100px;
+      height: auto;
+    }
+
+    .action-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .action-button button {
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .action-button button:focus {
+      outline: none;
+    }
+
+    .action-button {
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .action-button {
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      bottom: -21px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .action-button button:focus {
+      outline: none;
+    }
+
+    #gradient-card {
+      position: absolute;
+      top: -150px;
+      left: -310px;
+      width: 310%;
+      opacity: 40%;
+    }
+
+    .inner-card {
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .sidebar-div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   </style>
 </head>
 
 <body>
   <div class="sidebar">
-    <button id="cross-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15">
-        <path fill="currentColor"
-          d="M3.64 2.27L7.5 6.13l3.84-3.84A.92.92 0 0 1 12 2a1 1 0 0 1 1 1a.9.9 0 0 1-.27.66L8.84 7.5l3.89 3.89A.9.9 0 0 1 13 12a1 1 0 0 1-1 1a.92.92 0 0 1-.69-.27L7.5 8.87l-3.85 3.85A.92.92 0 0 1 3 13a1 1 0 0 1-1-1a.9.9 0 0 1 .27-.66L6.16 7.5L2.27 3.61A.9.9 0 0 1 2 3a1 1 0 0 1 1-1c.24.003.47.1.64.27" />
-      </svg>
-    </button>
-    <div class="logo-container">
-      <img id="logo-img" src="logo.png" alt="" />
-      <p id="logo-heading">twiz</p>
-    </div>
-    <div class="gradient-background">
-      <img id="gradient" src="Gradient.png" alt="" />
-      <div class="profile-card">
-        <img
-          src="https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?b=1&s=612x612&w=0&k=20&c=eU56mZTN4ZXYDJ2SR2DFcQahxEnIl3CiqpP3SOQVbbI="
-          alt="Profile Picture" />
-        <p class="card-heading">Jacob Jones</p>
-        <button>Edit Profile</button>
+    <div class="sidebar-div">
+      <div>
+        <button id="cross-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15">
+            <path fill="currentColor"
+              d="M3.64 2.27L7.5 6.13l3.84-3.84A.92.92 0 0 1 12 2a1 1 0 0 1 1 1a.9.9 0 0 1-.27.66L8.84 7.5l3.89 3.89A.9.9 0 0 1 13 12a1 1 0 0 1-1 1a.92.92 0 0 1-.69-.27L7.5 8.87l-3.85 3.85A.92.92 0 0 1 3 13a1 1 0 0 1-1-1a.9.9 0 0 1 .27-.66L6.16 7.5L2.27 3.61A.9.9 0 0 1 2 3a1 1 0 0 1 1-1c.24.003.47.1.64.27" />
+          </svg>
+        </button>
+        <div class="logo-container">
+          <img id="logo-img" src="logo.png" alt="" />
+          <p id="logo-heading">twiz</p>
+        </div>
+        <div class="gradient-background">
+          <img id="gradient" src="Gradient.png" alt="" />
+          <div class="profile-card">
+            <img src="https://i.pinimg.com/originals/b8/4c/15/b84c1524359fe01b397af3ae210c4f36.gif"
+              alt="Profile Picture" />
+            <p class="card-heading">Jacob Jones</p>
+            <button>Edit Profile</button>
+          </div>
+        </div>
+        <div class="menubar">
+          <div class="menu-item ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="white" d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z" />
+            </svg>
+            <a href="Dashboard.html">Dashboard</a>
+          </div>
+          <div class="menu-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="white"
+                d="M2 6c0-1.505.78-3.08 2-4c0 .845.69 2 2 2a3 3 0 0 1 3 3c0 .386-.079.752-.212 1.091a74.515 74.515 0 0 1 2.191 1.808l-2.08 2.08a75.852 75.852 0 0 1-1.808-2.191A2.977 2.977 0 0 1 6 10c-2.21 0-4-1.79-4-4m12.152 6.848l1.341-1.341A4.446 4.446 0 0 0 17.5 12A4.5 4.5 0 0 0 22 7.5c0-.725-.188-1.401-.493-2.007L18 9l-2-2l3.507-3.507A4.446 4.446 0 0 0 17.5 3A4.5 4.5 0 0 0 13 7.5c0 .725.188 1.401.493 2.007L3 20l2 2l6.848-6.848a68.562 68.562 0 0 0 5.977 5.449l1.425 1.149l1.5-1.5l-1.149-1.425a68.562 68.562 0 0 0-5.449-5.977" />
+            </svg>
+            <a href="customize.html">Customize</a>
+          </div>
+          <div class="menu-item hover-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0M3 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0m14 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-8-5a3 3 0 1 0 6 0a3 3 0 1 0-6 0m3-7v4m-5.3 6.8l2.8-2m7.8 2l-2.8-2" />
+            </svg>
+            <a href="social.html">Socials</a>
+          </div>
+          <div class="menu-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="white"
+                d="M19.9 12.66a1 1 0 0 1 0-1.32l1.28-1.44a1 1 0 0 0 .12-1.17l-2-3.46a1 1 0 0 0-1.07-.48l-1.88.38a1 1 0 0 1-1.15-.66l-.61-1.83a1 1 0 0 0-.95-.68h-4a1 1 0 0 0-1 .68l-.56 1.83a1 1 0 0 1-1.15.66L5 4.79a1 1 0 0 0-1 .48L2 8.73a1 1 0 0 0 .1 1.17l1.27 1.44a1 1 0 0 1 0 1.32L2.1 14.1a1 1 0 0 0-.1 1.17l2 3.46a1 1 0 0 0 1.07.48l1.88-.38a1 1 0 0 1 1.15.66l.61 1.83a1 1 0 0 0 1 .68h4a1 1 0 0 0 .95-.68l.61-1.83a1 1 0 0 1 1.15-.66l1.88.38a1 1 0 0 0 1.07-.48l2-3.46a1 1 0 0 0-.12-1.17ZM18.41 14l.8.9l-1.28 2.22l-1.18-.24a3 3 0 0 0-3.45 2L12.92 20h-2.56L10 18.86a3 3 0 0 0-3.45-2l-1.18.24l-1.3-2.21l.8-.9a3 3 0 0 0 0-4l-.8-.9l1.28-2.2l1.18.24a3 3 0 0 0 3.45-2L10.36 4h2.56l.38 1.14a3 3 0 0 0 3.45 2l1.18-.24l1.28 2.22l-.8.9a3 3 0 0 0 0 3.98m-6.77-6a4 4 0 1 0 4 4a4 4 0 0 0-4-4m0 6a2 2 0 1 1 2-2a2 2 0 0 1-2 2" />
+            </svg>
+            <a href="setting.html">Settings</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="menubar">
-      <div class="menu-item ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-          <path fill="white" d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z" />
-        </svg>
-        <a href="Dashboard.html">Dashboard</a>
-      </div>
-      <div class="menu-item">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-          <path fill="white"
-            d="M2 6c0-1.505.78-3.08 2-4c0 .845.69 2 2 2a3 3 0 0 1 3 3c0 .386-.079.752-.212 1.091a74.515 74.515 0 0 1 2.191 1.808l-2.08 2.08a75.852 75.852 0 0 1-1.808-2.191A2.977 2.977 0 0 1 6 10c-2.21 0-4-1.79-4-4m12.152 6.848l1.341-1.341A4.446 4.446 0 0 0 17.5 12A4.5 4.5 0 0 0 22 7.5c0-.725-.188-1.401-.493-2.007L18 9l-2-2l3.507-3.507A4.446 4.446 0 0 0 17.5 3A4.5 4.5 0 0 0 13 7.5c0 .725.188 1.401.493 2.007L3 20l2 2l6.848-6.848a68.562 68.562 0 0 0 5.977 5.449l1.425 1.149l1.5-1.5l-1.149-1.425a68.562 68.562 0 0 0-5.449-5.977" />
-        </svg>
-        <a href="customize.html">Customize</a>
-      </div>
-      <div class="menu-item hover-item">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-          <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M10 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0M3 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0m14 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-8-5a3 3 0 1 0 6 0a3 3 0 1 0-6 0m3-7v4m-5.3 6.8l2.8-2m7.8 2l-2.8-2" />
-        </svg>
-        <a href="social.html">Socials</a>
-      </div>
-      <div class="menu-item ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-          <path fill="white"
-            d="M19.9 12.66a1 1 0 0 1 0-1.32l1.28-1.44a1 1 0 0 0 .12-1.17l-2-3.46a1 1 0 0 0-1.07-.48l-1.88.38a1 1 0 0 1-1.15-.66l-.61-1.83a1 1 0 0 0-.95-.68h-4a1 1 0 0 0-1 .68l-.56 1.83a1 1 0 0 1-1.15.66L5 4.79a1 1 0 0 0-1 .48L2 8.73a1 1 0 0 0 .1 1.17l1.27 1.44a1 1 0 0 1 0 1.32L2.1 14.1a1 1 0 0 0-.1 1.17l2 3.46a1 1 0 0 0 1.07.48l1.88-.38a1 1 0 0 1 1.15.66l.61 1.83a1 1 0 0 0 1 .68h4a1 1 0 0 0 .95-.68l.61-1.83a1 1 0 0 1 1.15-.66l1.88.38a1 1 0 0 0 1.07-.48l2-3.46a1 1 0 0 0-.12-1.17ZM18.41 14l.8.9l-1.28 2.22l-1.18-.24a3 3 0 0 0-3.45 2L12.92 20h-2.56L10 18.86a3 3 0 0 0-3.45-2l-1.18.24l-1.3-2.21l.8-.9a3 3 0 0 0 0-4l-.8-.9l1.28-2.2l1.18.24a3 3 0 0 0 3.45-2L10.36 4h2.56l.38 1.14a3 3 0 0 0 3.45 2l1.18-.24l1.28 2.22l-.8.9a3 3 0 0 0 0 3.98m-6.77-6a4 4 0 1 0 4 4a4 4 0 0 0-4-4m0 6a2 2 0 1 1 2-2a2 2 0 0 1-2 2" />
-        </svg>
-        <a href="setting.html">Settings</a>
+      <div class="card-outer">
+
+        <div class="card">
+          <div class="inner-card">
+            <img id="gradient-card" src="Gradient.png" alt="" />
+            <div class="content-card">
+              <p>Use our Premium Features Now!</p>
+              <div class="illustration">
+                <img src="discordLogo.png" alt="Person with a cup">
+              </div>
+
+
+            </div>
+          </div>
+          <button class="action-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="white"
+                d="m19.164 12l-6.207-6.207l-1.414 1.414L16.336 12l-4.793 4.793l1.414 1.414zm-5.65 0L7.307 5.793L5.893 7.207L10.686 12l-4.793 4.793l1.414 1.414z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -672,7 +788,9 @@
     <div class="top-btns">
       <button id="upgrade">Upgrade</button>
       <button id="not-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" style="
+        margin-top: 3px;
+    ">
           <g fill="none">
             <path
               d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
@@ -693,10 +811,10 @@
         </h2>
 
         <div class="social-container">
-          <input id="link-input" name="" type="url" placeholder="Enter Url" />
+          <input id="link-input" name="" type="url" placeholder="Enter URL" />
           <div id="dropdown" class="dropdown">
             <div class="dropdown-header">
-              <span id="dropdown-title">Select Icon</span>
+              <span id="dropdown-title">Select Social</span>
 
               <svg class="dropdown-arrow" width="20px" height="20px" viewBox="5 7 14 8" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -846,7 +964,7 @@
                   <path fill="currentColor"
                     d="M5.164 0L.16 18.928L18.836 24L23.84 5.072Zm8.747 15.354l-5.219-1.417l1.399-5.29l5.22 1.418l-1.4 5.29z" />
                 </svg>
-                RobLox
+                Roblox
               </div>
               <div class="dropdown-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
